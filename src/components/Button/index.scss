@@ -1,0 +1,25 @@
+.btn-component {
+    border-radius: 4px;
+    background-color: #fff;
+    border: 1px solid #000;
+    color: #000;
+    padding: 0px 20px 0px 20px;
+
+    &:hover {
+        border: 1px solid #1877f2;
+        color: #1877f2;
+        cursor: pointer;
+    }
+}
+
+.btn48 {
+    height: 48px;
+}
+
+.btn32 {
+    height: 32px;
+}
+
+.btn24 {
+    height: 24px;
+}
