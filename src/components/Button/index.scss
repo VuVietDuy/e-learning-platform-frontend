@@ -1,9 +1,10 @@
 .btn-component {
-    border-radius: 4px;
+    border-radius: 8px;
     background-color: #fff;
     border: 1px solid #000;
     color: #000;
     padding: 0px 20px 0px 20px;
+    font-weight: 600;
 
     &:hover {
         border: 1px solid #1877f2;

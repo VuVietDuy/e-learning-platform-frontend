@@ -1,0 +1,22 @@
+.avatar {
+    width: 48px;
+    height: 48px;
+    background-color: aqua;
+    border-radius: 50%;
+    overflow: hidden;
+
+    .image {
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+.large {
+    width: 48px;
+    height: 48px;
+}
+
+.small {
+    width: 32px;
+    height: 32px;
+}

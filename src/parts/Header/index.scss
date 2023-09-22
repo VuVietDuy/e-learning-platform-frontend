@@ -8,13 +8,40 @@
     .left {
         display: flex;
 
+        .logo {
+            margin: 0px 24px 0px 24px;
+        }
+
         .btn {
-            margin-left: 20px;
+            margin: 0px 16px 0px 16px;
+            background-color: #E7E7E7;
+        }
+
+        .search {
+            width: 448px;
+            margin: 0px 16px 0px 16px;
             background-color: #E7E7E7;
         }
     }
     
     .right {
         display: flex;
+
+        .btn-text {
+            height: 40px;
+            line-height: 40px;
+            margin-right: 30px;
+            font-size: 18px;
+            font-weight: 600;
+
+            &:hover {
+                color: #1877f2;
+                cursor: pointer;
+            }
+        }
+
+        .avatar {
+            margin: 0px 24px 0px 24px;
+        }
     }
 }

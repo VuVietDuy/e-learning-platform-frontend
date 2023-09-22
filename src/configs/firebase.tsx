@@ -15,3 +15,14 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
+
+
+const vu = " viet duy"
+const array = [
+  1,2,3,4,5,6,5
+]
+
+for (let i = 0; i < array.length; i++) {
+  const element = array[i];
+  console.log(array)
+}
