@@ -1,21 +1,42 @@
-import React from 'react'
-import Card from '../../../components/Card'
+import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, A11y, Autoplay } from 'swiper/modules';
+import './index.scss';
+import 'swiper/css';
 
-function Layout2() {
+
+const Layout2 = () => {
+  const listImg = [
+    {
+      src: "/images/layout2-1.jpg"
+    },
+    {
+      src: "/images/layout2.png"
+    },
+    {
+      src: "/images/layout2-1.jpg"
+    },
+    {
+      src: "/images/layout2.png"
+    },
+  ]
   return (
-    <div>
-        <Card 
-        src="/images/card.png"
-        time="1h 20p"
-        title="Photoshop Advance: Retouching with Master of Photoshop (2023) ..."
-        instructor="Duy Vu"
-        star="4/5"
-        currentPrice="80$"
-        defaultPrice="100$"
-        viewer="(1,000,000)"
-        ></Card>
-    </div>
-  )
-}
+    <Swiper
+      modules={[Navigation, Autoplay, A11y]}
+      slidesPerView={1}
+      onSlideChange={() => console.log("slide change")}
+      // onSwiper={(swiper) => console.log(swiper)}
+      autoplay={true}
+      loop
+      className='swiper-layout2'
+    >
+      {listImg.map((item, index) => (
+        <SwiperSlide key={index}>
+          <img src={item.src} alt="" />
+        </SwiperSlide>
+      ))}
+    </Swiper>
+  );
+};
 
-export default Layout2
+export default Layout2;

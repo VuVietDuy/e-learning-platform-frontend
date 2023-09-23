@@ -8,6 +8,7 @@ export function HomePage() {
     return (
         <div className="HomePage">
             <Layout1></Layout1>
+            <Layout2></Layout2>
         </div>
     )
 }

@@ -1,6 +1,16 @@
-.Layout1 {
+.layout1-container {
     width: 1000px;
     margin: auto;
-    display: flex;
-    justify-content: space-between;
+    text-align: left;
+
+    .title {
+        font-size: 28px;
+        font-weight: 600;
+    }
+
+
+    .swiper-layout1 {
+        height: 400px;
+        margin: auto;
+    }
 }
