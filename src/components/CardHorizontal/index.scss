@@ -1,0 +1,24 @@
+.card-horizontal {
+    width: 488px;
+    height: 162px;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    font-family: "FuturaNowHeadline-XLight", Sans-serif;
+
+    .left {
+        width: 50%;
+        height: 100%;
+
+        img {
+            width: 100%;
+            object-fit: over;
+        }
+    }
+
+    .right {
+        width: 50%;
+        height: 100%;
+        
+    }
+}
