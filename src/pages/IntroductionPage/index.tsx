@@ -4,7 +4,7 @@ import {Card} from "../../components/Card";
 import { LoginForm } from "../../components/LoginForm";
 import { SignupForm } from "../../components/SignupForm";
 import './index.scss'
-import FourCard from "../../components/FourCard";
+import Layout1 from "../../pages/HomePage/Layout1";
 
 
 
@@ -30,7 +30,7 @@ export function IntroductionPage() {
                         <br />
                         <h3>GraFish classes are taught by industry leaders excited to share their tools, techniques, and professional journeys with you</h3>
                     </div>
-                    <FourCard></FourCard>
+                    <Layout1></Layout1>
                 </div>
 
                 <div className="part3">
