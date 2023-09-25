@@ -20,8 +20,6 @@ function CardHorizontal(props: any) {
             <div className='lession'>{lession} | {time}</div>
             <div className='title'>{title}</div>
             <div className='instructor'>{instructor}</div>
-            Levents là thương hiệu thời trang đường phố dẫn dầu xu hướng với phong cách thiết kế đơn giản, sành điệu,
-sản phẩm tiêu chuẩn cao dành cho giới trẻ toàn cầu tự tin thể hiện cá tính.
         </div>
     </div>
   )

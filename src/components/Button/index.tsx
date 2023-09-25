@@ -13,6 +13,6 @@ export function Button(props: any) {
     const btnSize = `btn${size}`
 
     return (
-        <button className={`${className} btn-component ${btnSize}`} onClick={onClick}>{title}</button>
+        <button className={`${className} btn-component ${btnSize}`} onClick={onClick}>{title || props.children}</button>
     )
 }

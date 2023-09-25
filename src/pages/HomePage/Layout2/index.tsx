@@ -1,11 +1,19 @@
-import React from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, A11y, Autoplay } from 'swiper/modules';
-import './index.scss';
-import 'swiper/css';
+import React, { useState } from 'react';
+import { Swiper, SwiperSlide, useSwiper } from 'swiper/react';
+import { Pagination, A11y, Autoplay, EffectFade } from 'swiper/modules';
+import 'swiper/scss';
+import 'swiper/scss/pagination';
 
+import './index.scss';
 
 const Layout2 = () => {
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const handleSlideChange = (swiper: any) => {
+    setActiveIndex(swiper.activeIndex);
+  }
+
+
   const listImg = [
     {
       src: "/images/layout2-1.jpg"
@@ -21,21 +29,28 @@ const Layout2 = () => {
     },
   ]
   return (
-    <Swiper
-      modules={[Navigation, Autoplay, A11y]}
-      slidesPerView={1}
-      onSlideChange={() => console.log("slide change")}
-      // onSwiper={(swiper) => console.log(swiper)}
-      autoplay={true}
-      loop
-      className='swiper-layout2'
-    >
-      {listImg.map((item, index) => (
-        <SwiperSlide key={index}>
-          <img src={item.src} alt="" />
-        </SwiperSlide>
-      ))}
-    </Swiper>
+    <div>
+      <Swiper
+        modules={[Pagination, Autoplay, EffectFade, A11y]}
+        slidesPerView={1}
+        pagination={{
+          clickable:true,
+        }}
+        autoplay={{
+          delay: 4000,
+          disableOnInteraction: false,
+        }}
+        onSlideChange={handleSlideChange}
+        initialSlide={0}
+        className='swiper-layout2'
+      >
+        {listImg.map((item, index) => (
+          <SwiperSlide key={index}>
+            <img src={item.src} alt="" />
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </div>
   );
 };
 
