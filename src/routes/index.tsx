@@ -1,5 +1,4 @@
 import React from "react"
-import { createBrowserRouter } from 'react-router-dom'
 
 import { HomePage } from "../pages/HomePage"
 import CoursePreview from "../pages/CoursePreview"
@@ -11,6 +10,8 @@ import {DefaultLayout} from "../components/Layout"
 import { IntroductionPage } from "../pages/IntroductionPage"
 import {LoginLayout} from "../components/Layout/"
 import Password from "../pages/AccountSettingPage/componets/Password"
+import SearchResult from "../pages/SearchResult"
+import { LearningPage } from "../pages/LearningPage"
 
 
 const publicRouter = [
@@ -30,8 +31,18 @@ const publicRouter = [
         layout: DefaultLayout,
     },
     {
+        path: "/search",
+        element: SearchResult,
+        layout: DefaultLayout,
+    },
+    {
         path: "/classes",
         element: MyClasses,
+        layout: DefaultLayout,
+    },
+    {
+        path: "/learning",
+        element: LearningPage,
         layout: DefaultLayout,
     },
     {

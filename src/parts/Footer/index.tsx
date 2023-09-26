@@ -31,9 +31,9 @@ export function Footer() {
               </ul>
               <ul className="f-contain-top-item">
                 <li className="f-top-list f-top-list--bold">Subscribe our Youtube Channel</li>
-                <button className="f-contain-top-item-btn">
+                <Button className="f-contain-top-item-btn" size="32">
                      <div className="f-contain-top-item-btn-grafish">GraFish</div>
-                </button>
+                </Button>
               </ul>
           </div>
           <div className="f-contain-bottom">
@@ -45,9 +45,9 @@ export function Footer() {
               </ul>
               <ul className="f-contain-bottom-item">
 
-                <button className=" f-contain-bottom-item-btn">
+                <Button className=" f-contain-bottom-item-btn">
                      <div className="f-contain-bottom-item-btn-Endlish">English</div>
-                </button>
+                </Button>
               </ul>
           </div>
         </div>
