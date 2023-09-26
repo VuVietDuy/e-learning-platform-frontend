@@ -1,21 +1,69 @@
-import React from "react";
+import React from 'react'
+import Card from '../Card'
 import './index.scss'
 
+function FourCard() {
 
-export function SignupForm() {
-    return (
-        <div className="SignupForm">
-            <h3>Sign Up</h3>
-            <div className="fullName">
-                <input className="name" type="text" placeholder="First name" />
-                <input className="name" type="text" placeholder="Last name" />
-            </div>
-            <input className="email" type="text" placeholder="Email address" />
-            <p>(Check your Gmail for Passcode)</p>
-            <input className="passcode" type="text" placeholder="HJAKA - HFDJK - HDJKS - KIJLM" pattern="[0-9]{3}[0-9]{3}[0-9]{4}"/>
-            <p>By signing up you agree to GraFish’s <a href="">Terms of Service</a>
-            &nbsp; & &nbsp; <a href="">Privacy Policy</a>. This page is protected by reCAPTCHA and is subjected to  Google’s Team</p>
-            <button className="signupButton">Sign Up</button>
-        </div>
-    )
+    const listCard = [
+        {
+            src:"/images/card.png",
+            time:"1h 20p",
+            title:"Photoshop Advance: Retouching with Master of Photoshop (2023) ...",
+            instructor:"Duy Vu",
+            star:"4/5",
+            currentPrice:"80$",
+            defaultPrice:"100$",
+            viewer:"(1,000,000)",
+        },
+        {
+            src:"/images/card1.png",
+            time:"1h 20p",
+            title:"Photoshop Advance: Retouching with Master of Photoshop (2023) with Master of Photoshop (2023)",
+            instructor:"Duy Vu",
+            star:"4/5",
+            currentPrice:"80$",
+            defaultPrice:"100$",
+            viewer:"(1,000,000)",
+        },
+        {
+            src:"/images/card2.png",
+            time:"1h 20p",
+            title:"Photoshop Advance: Retouching with Master of Photoshop (2023) ...",
+            instructor:"Duy Vu",
+            star:"4/5",
+            currentPrice:"80$",
+            defaultPrice:"130$",
+            viewer:"(150,000)",
+        },
+        {
+            src:"/images/card.png",
+            time:"1h 20p",
+            title:"Photoshop Advance: Retouching with Master of Photoshop (2023) ...",
+            instructor:"Jacod Andree",
+            star:"4/5",
+            currentPrice:"50$",
+            defaultPrice:"120$",
+            viewer:"(1,000,000)",
+        }
+    ]
+
+  return (
+    <div className='FourCard'>
+        {listCard.map((card, index) => (
+            <Card 
+            src={card.src}
+            time={card.time}
+            title={card.title}
+            instructor={card.instructor}
+            star={card.star}
+            currentPrice={card.currentPrice}
+            defaultPrice={card.defaultPrice}
+            viewer={card.viewer}
+            key={index}
+            ></Card>
+        ))}
+    </div>
+  )
 }
+
+export default FourCard
