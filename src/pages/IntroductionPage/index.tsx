@@ -1,10 +1,9 @@
 import React from "react";
 
-import {Card} from "../../components/Card";
 import { LoginForm } from "../../components/LoginForm";
 import { SignupForm } from "../../components/SignupForm";
 import './index.scss'
-import Layout1 from "../../pages/HomePage/Layout1";
+import FourCard from "../../components/FourCard";
 
 
 
@@ -19,7 +18,6 @@ export function IntroductionPage() {
                     </div>
                     <div className="login-pic">
                         <SignupForm></SignupForm>
-
                         <img className="picture1" src="/images/example.png" alt="" />
                     </div>
                 </div>
@@ -30,7 +28,7 @@ export function IntroductionPage() {
                         <br />
                         <h3>GraFish classes are taught by industry leaders excited to share their tools, techniques, and professional journeys with you</h3>
                     </div>
-                    <Layout1></Layout1>
+                    <FourCard></FourCard>
                 </div>
 
                 <div className="part3">
