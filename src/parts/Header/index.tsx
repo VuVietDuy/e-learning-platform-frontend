@@ -4,6 +4,7 @@ import './index.scss'
 import { Button } from "../../components/Button";
 import Search from "../../components/Search";
 import { Avatar } from "../../components/Avatar";
+import { NavLink } from "react-router-dom";
 
 export function Header() {
     return (

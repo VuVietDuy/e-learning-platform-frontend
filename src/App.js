@@ -1,15 +1,26 @@
 import './App.css';
-import { Footer } from './parts/Footer';
-import { Header } from './parts/Header'
-import CoursePreview from './pages/CoursePreview'
+import {publicRouter} from './routes'
+import { Route,BrowserRouter as Router, Routes ,  } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <Header></Header>
-      <CoursePreview></CoursePreview>
-      <Footer></Footer>      
-    </div>
+    <Router>
+      <div className="App">
+        <Routes>
+          {publicRouter.map((route, index) => {
+            const Layout = route.layout;
+            const Page = route.element;
+            return (
+              <Route path={route.path} element={
+                <Layout>
+                  <Page></Page>
+                </Layout>
+              } key={index}></Route>
+              );
+            })}
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

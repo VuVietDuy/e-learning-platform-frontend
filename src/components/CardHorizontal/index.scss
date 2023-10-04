@@ -1,14 +1,17 @@
+@mixin size {
+    width: 50%;
+    height: 100%;
+}
+
 .card-horizontal {
     width: 488px;
     height: 162px;
     border-radius: 8px;
     overflow: hidden;
     display: flex;
-    font-family: "FuturaNowHeadline-XLight", Sans-serif;
 
     .left {
-        width: 50%;
-        height: 100%;
+        @include size();
 
         img {
             width: 100%;
@@ -17,8 +20,23 @@
     }
 
     .right {
-        width: 50%;
-        height: 100%;
-        
+        @include size();
+        background-color: #D9D9D9;
+        position: relative;
+
+        .lession {
+            font-size: 16px;
+            line-height: 19.2px;
+            font-weight: 500;
+        }
+
+        .title {
+
+        }
+
+        .instructor {
+            position: absolute;
+            bottom: 8px;
+        }
     }
 }

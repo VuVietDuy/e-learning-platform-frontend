@@ -1,10 +1,13 @@
 .btn-component {
     border-radius: 8px;
+    height: 48px;
     background-color: #fff;
     border: 1px solid #000;
     color: #000;
     padding: 0px 20px 0px 20px;
     font-weight: 600;
+    font-size: 16px;
+    transition: .2s;
 
     &:hover {
         border: 1px solid #1877f2;
@@ -18,9 +21,11 @@
 }
 
 .btn32 {
+    border-radius: 4px;
     height: 32px;
 }
 
 .btn24 {
+    border-radius: 2.92px;
     height: 24px;
 }

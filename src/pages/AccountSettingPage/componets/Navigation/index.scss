@@ -1,0 +1,15 @@
+.navigation-container {
+    width: 341px;
+    height: auto;
+    text-align: left;
+
+    .option {
+        height: 57px;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        &:hover {
+            background-color: #7D7D7D;
+        }
+    }
+}
