@@ -20,7 +20,7 @@ export function Header() {
             <div className="right">
                 <span className="btn-text">Discount Code</span>
                 <span className="btn-text">My Classes</span>
-                <Avatar src="/images/avatar.jpg" ></Avatar>
+                <NavLink to={"/profile"}><Avatar src="/images/avatar.jpg" ></Avatar></NavLink>
             </div>
         </div>
     )

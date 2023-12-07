@@ -1,19 +1,18 @@
 import React from 'react'
-import Navigation from './componets/Navigation'
-import { Route,BrowserRouter as Router, RouterProvider , Routes } from 'react-router-dom';
-import EmailAddress from './componets/EmailAddress';
-import Password from './componets/Password';
-import { accountSettingRoutes } from '../../routes';
+import { Route, Routes } from 'react-router-dom';
 
+import Navigation from './componets/Navigation'
+import { accountSettingRoutes } from '../../routes';
+import './index.scss'
 
 function AccountSetting() {
   return (
-    <div>
+    <div className='account-setting-container'>
         <Navigation></Navigation>
         <Routes>
             {accountSettingRoutes.map((route, index) => {
                 const Element = route.element;
-                return <Route path={route.path} element={<Element></Element>} ></Route>
+                return <Route path={route.path} element={<Element></Element>} key={index}></Route>
             })}
         </Routes>
     </div>

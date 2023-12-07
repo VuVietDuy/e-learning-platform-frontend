@@ -1,5 +1,3 @@
-import React from "react"
-
 import { HomePage } from "../pages/HomePage"
 import CoursePreview from "../pages/CoursePreview"
 import Profile from "../pages/Profile"
@@ -9,9 +7,10 @@ import EmailAddress from "../pages/AccountSettingPage/componets/EmailAddress"
 import {DefaultLayout} from "../components/Layout"
 import { IntroductionPage } from "../pages/IntroductionPage"
 import {LoginLayout} from "../components/Layout/"
-import Password from "../pages/AccountSettingPage/componets/Password"
-import SearchResult from "../pages/SearchResult"
+import {SearchResult} from "../pages/SearchResult"
 import { LearningPage } from "../pages/LearningPage"
+import FormChangePassword from "../pages/AccountSettingPage/componets/FormChangePassword"
+import ShopCart from "../pages/ShopCart"
 
 
 const publicRouter = [
@@ -41,7 +40,7 @@ const publicRouter = [
         layout: DefaultLayout,
     },
     {
-        path: "/learning",
+        path: "/learning/*",
         element: LearningPage,
         layout: DefaultLayout,
     },
@@ -55,6 +54,12 @@ const publicRouter = [
         element: AccountSetting,
         layout: DefaultLayout,
     },
+    {
+        path: "/shop_cart",
+        element: ShopCart,
+        layout: DefaultLayout,
+    },
+    
 ]
 
 const accountSettingRoutes = [
@@ -64,11 +69,11 @@ const accountSettingRoutes = [
     },
     {
         path: 'edit_password',
-        element: Password,
+        element: FormChangePassword,
     },
     {
         path: 'email_notifications',
-        element: Password,
+        element: FormChangePassword,
     },
 ]
 
