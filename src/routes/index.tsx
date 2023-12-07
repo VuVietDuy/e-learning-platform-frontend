@@ -12,6 +12,7 @@ import {LoginLayout} from "../components/Layout/"
 import Password from "../pages/AccountSettingPage/componets/Password"
 import SearchResult from "../pages/SearchResult"
 import { LearningPage } from "../pages/LearningPage"
+import HelpCenter from "../pages/HelpCenter"
 
 
 const publicRouter = [
@@ -48,6 +49,11 @@ const publicRouter = [
     {
         path: "profile",
         element: Profile,
+        layout: DefaultLayout,
+    },
+    {
+        path: "helpcenter",
+        element: HelpCenter,
         layout: DefaultLayout,
     },
     {

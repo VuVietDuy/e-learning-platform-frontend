@@ -1,0 +1,36 @@
+.MyClassesCourse{
+    width: 317px;
+    height: 300px;
+    transition: .2s;
+    .top{
+        width: 317px;
+        height: 150px;
+        border-radius: 8px 8px 0px 0px;
+        background-color: grey;
+    }
+    .bottom{
+        color: rgb(255, 255, 255);
+        width: 317px;
+        height: 150px;
+        border-radius: 0px 0px 8px 8px;
+        padding: 16px 60px 16px 16px;
+        background: #002333;
+        .lesson{
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+        .classNum{
+            font-size: 16px;
+            font-weight: 600;
+            .hourLearn{
+                font-size: 15px;
+                font-weight: 300;
+            }
+        }
+    }
+}
+.MyClassesCourse:hover{
+    cursor: pointer;
+    box-shadow: 5px 5px 10px rgb(155, 155, 155);
+}
