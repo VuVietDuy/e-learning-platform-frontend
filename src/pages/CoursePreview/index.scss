@@ -431,6 +431,11 @@ margin: 12px 0;
     flex-wrap: wrap;
     text-align: start;
     margin-bottom: 16px;
+
+}
+.course-3-des-1:hover{
+    text-decoration:underline;
+    cursor: pointer;
 }
 .course-3-des-2-contain{
     display: flex;
@@ -470,4 +475,13 @@ font-weight: 500;
 font-size: 37.76px;
 
 font-weight: 600;
+}
+.course-3-img{
+    margin-right: 26px;
+    display: flex;
+    flex-direction: column;
+}
+.des-2-3-margin{
+    margin-top: 20px;
+    margin-bottom: 40px;
 }

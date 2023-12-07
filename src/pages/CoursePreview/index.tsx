@@ -169,7 +169,7 @@ function CoursePreview() {
             <div className="course__3">
               <div className="course-title-info">Students also bought</div>
               <div className="course-3-body">
-                <div className="course-3-img">anh chen</div>
+                <div  className="course-3-img"> <img src="/images/classes/card4.png" alt="" /></div>
                 <div className="course-3-des">
                   <div className="course-3-des-1">Dynamic Male Anatomy for Artists in Mudbox: Make realistic 3D Meta Human</div>
                   <div className="course-3-des-2-contain">

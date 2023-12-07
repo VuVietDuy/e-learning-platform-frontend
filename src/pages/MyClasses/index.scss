@@ -1,0 +1,157 @@
+$bgcolor: #d72727;
+.mayclasses-container {
+    width: 1000px;
+    margin: auto;
+    margin-top: 80px;
+    .title{
+        font-size: 28px;
+        font-weight: 600;
+        text-align: start;
+    }
+    .nav{
+        display: flex;
+        border-bottom: 1px solid #000;
+        font-size: 16px;
+        font-weight: 600;
+        .nav-list{
+            
+            padding: 16px 30px;
+            border: none;
+            background-color: #fff;
+            font-size: 16px;
+            font-weight: 600;
+        }
+        .nav-list:hover{
+            cursor: pointer;
+            
+        }
+        .learning-path{
+            margin-left: 64px;
+        }
+       
+    }
+    // begin purchased-contain
+    .purchased-contain{
+        .mt24{
+            margin-top: 24px;
+        }
+        .course-img-box{
+            width: 317px;
+            height: 16px;
+            background-color: #ccc;
+            margin-top: 8px;
+            object-fit: cover;
+        }
+    }
+    // End purchased-contain
+    // begin learning path
+    .learning-path-contain{
+        margin-top: 24px;
+        margin-bottom: 100px;
+        display: flex;
+        flex-wrap: wrap;
+        .learning-list{
+            background-color: #777070;
+            color: white;
+            width: 318px;
+            height: 300px;
+            text-align: start;
+            border-radius: 8px;
+            margin-top: 24px;
+           
+            .descript{           
+                font-size: 18px;
+                font-weight: 600;
+                margin-left: 16px;
+                margin-top: 16px;
+                width: 240px;
+            }
+            .descript:hover{
+                color: rgb(0, 229, 255);
+                cursor: pointer;
+            }
+            .descript-class{
+                display: flex;
+                margin-left: 16px;
+                margin-top: 28px;
+                .number{
+                    font-size: 16px;
+                    font-weight: 600;
+                    margin-right: 8px;
+                }
+                .hour{
+                    font-size: 16px;
+                    font-weight: 300;
+                    opacity: 0.8;
+                }
+            }
+           
+        }
+        .mg-middle{
+            margin-left: 22px;
+            margin-right: 22px;
+        }
+    }
+    // end learning-path
+    // Begin Watch-history
+    .watch-histoty {
+        .class-option {
+            .choose{
+                display: flex;
+
+                .choose-item {
+                    width: 50%;
+                    .choose-title {
+                        text-align: start;
+                    }
+                    .radio-btn {
+                        margin-top: 16px;
+                        margin-bottom: 30px;
+                        display: flex;
+                        .radio{
+                            margin-right: 80px;
+                        }
+                    }
+                }
+            }
+            h3{
+                text-align: start;
+                margin-bottom: 16px;
+            }
+        }
+        .skills {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 24px;
+            border-bottom: 2px solid #000;
+            .btn-list {
+                .item {
+                    margin-right: 6px
+                }
+            }
+        }
+        .class-list{
+            .mt24{
+                margin-top: 24px;
+            }
+            .mt80{
+                margin-top: 80px;
+                margin-bottom: unset;
+            }
+            .fz-20{
+                
+            }
+            .course-img-box{
+                width: 317px;
+                height: 16px;
+                background-color: #ccc;
+                margin-top: 8px;
+                object-fit: cover;
+            }
+        }
+    }
+    // end watch-history
+}
+
+
+
