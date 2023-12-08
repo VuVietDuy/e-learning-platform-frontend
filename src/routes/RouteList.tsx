@@ -11,6 +11,7 @@ import Password from "antd/es/input/Password"
 import {DefaultLayout} from "../components/Layout"
 import { IntroductionPage } from "../pages/IntroductionPage"
 import {LoginLayout} from "../components/Layout/"
+import CheckOut from "../pages/CheckOut"
 
 
 const publicRouter = [
@@ -32,6 +33,11 @@ const publicRouter = [
     {
         path: "/classes",
         element: MyClasses,
+        layout: DefaultLayout,
+    },
+    {
+        path: "/checkout",
+        element: CheckOut,
         layout: DefaultLayout,
     },
     {

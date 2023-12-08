@@ -5,6 +5,8 @@ import { Button } from "../../components/Button";
 import Search from "../../components/Search";
 import { Avatar } from "../../components/Avatar";
 import { NavLink } from "react-router-dom";
+import { BellOutlined, ShoppingCartOutlined } from "@ant-design/icons";
+import { Dropdown } from "antd";
 
 export function Header() {
     return (
@@ -18,8 +20,10 @@ export function Header() {
                 </div>
             </div>
             <div className="right">
-                <span className="btn-text">Discount Code</span>
-                <span className="btn-text">My Classes</span>
+                <NavLink to={"/help_center"} className="btn-text">Help Center</NavLink>
+                <NavLink to={"/"} className="btn-text">Teacher</NavLink>
+                <NavLink to={"/shop_cart"} className="btn-text"><ShoppingCartOutlined/></NavLink>
+                <NavLink to={"/"} className="btn-text"><BellOutlined /></NavLink>
                 <NavLink to={"/profile"}><Avatar src="/images/avatar.jpg" ></Avatar></NavLink>
             </div>
         </div>

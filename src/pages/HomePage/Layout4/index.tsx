@@ -17,8 +17,95 @@ function Layout4() {
 
   return (
     <div className='layout4-container'>
-        <div>
-            <p className='title'>Inclusive Culinary Course</p>
+        <div className='row'>
+            <h3 className='title'>Inclusive Culinary Course</h3>
+            <Swiper
+            modules={[Autoplay, A11y]}
+            slidesPerView={4}
+            spaceBetween={20}
+            pagination={true}
+            navigation={true}
+            onSlideChange={handleSlideChange2}
+            className='swiper-layout1'
+            >
+            {listCard.map((card, index) => (
+                <SwiperSlide>
+                <Course
+                    src={card.src}
+                    time={card.time}
+                    title={card.title}
+                    instructor={card.instructor}
+                    star={card.star}
+                    currentPrice={card.currentPrice}
+                    defaultPrice={card.defaultPrice}
+                    viewer={card.viewer}
+                    key={index}
+                ></Course>
+                </SwiperSlide>
+                ))}
+            </Swiper>
+            <MyPagination numberOfSlide={listCard.length-3} activeIndex={activeIndex} size={'small'}></MyPagination>
+        </div>
+        <div className='row'>
+            <h3 className='title'>Inclusive Culinary Course</h3>
+            <Swiper
+            modules={[Autoplay, A11y]}
+            slidesPerView={4}
+            spaceBetween={20}
+            pagination={true}
+            navigation={true}
+            onSlideChange={handleSlideChange2}
+            className='swiper-layout1'
+            >
+            {listCard.map((card, index) => (
+                <SwiperSlide>
+                <Course
+                    src={card.src}
+                    time={card.time}
+                    title={card.title}
+                    instructor={card.instructor}
+                    star={card.star}
+                    currentPrice={card.currentPrice}
+                    defaultPrice={card.defaultPrice}
+                    viewer={card.viewer}
+                    key={index}
+                ></Course>
+                </SwiperSlide>
+                ))}
+            </Swiper>
+            <MyPagination numberOfSlide={listCard.length-3} activeIndex={activeIndex} size={'small'}></MyPagination>
+        </div>
+        <div className='row'>
+            <h3 className='title'>Inclusive Culinary Course</h3>
+            <Swiper
+            modules={[Autoplay, A11y]}
+            slidesPerView={4}
+            spaceBetween={20}
+            pagination={true}
+            navigation={true}
+            onSlideChange={handleSlideChange2}
+            className='swiper-layout1'
+            >
+            {listCard.map((card, index) => (
+                <SwiperSlide>
+                <Course
+                    src={card.src}
+                    time={card.time}
+                    title={card.title}
+                    instructor={card.instructor}
+                    star={card.star}
+                    currentPrice={card.currentPrice}
+                    defaultPrice={card.defaultPrice}
+                    viewer={card.viewer}
+                    key={index}
+                ></Course>
+                </SwiperSlide>
+                ))}
+            </Swiper>
+            <MyPagination numberOfSlide={listCard.length-3} activeIndex={activeIndex} size={'small'}></MyPagination>
+        </div>
+        <div className='row'>
+            <h3 className='title'>Inclusive Culinary Course</h3>
             <Swiper
             modules={[Autoplay, A11y]}
             slidesPerView={4}
@@ -47,7 +134,7 @@ function Layout4() {
             <MyPagination numberOfSlide={listCard.length-3} activeIndex={activeIndex} size={'small'}></MyPagination>
         </div>
         <div className='bottom'>
-            <p className='title'>Your Creative Interests</p>
+            <h3 className='title'>Your Creative Interests</h3>
             <Button className='button' title='Film & Video' size='32'></Button>
             <Button className='button' title='Graphic Design' size='32'></Button>
             <Button className='button' title='3D Art' size='32'></Button>

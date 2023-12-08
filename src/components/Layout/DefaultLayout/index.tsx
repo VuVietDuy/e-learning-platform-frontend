@@ -6,7 +6,9 @@ function DefaultLayout({children} : any) {
   return (
     <div>
         <Header></Header>
-        {children}
+        <div>
+          {children}
+        </div>
         <Footer></Footer>
     </div>
   )

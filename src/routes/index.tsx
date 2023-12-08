@@ -11,6 +11,7 @@ import {SearchResult} from "../pages/SearchResult"
 import { LearningPage } from "../pages/LearningPage"
 import FormChangePassword from "../pages/AccountSettingPage/componets/FormChangePassword"
 import ShopCart from "../pages/ShopCart"
+import CheckOut from "../pages/CheckOut"
 
 
 const publicRouter = [
@@ -59,7 +60,11 @@ const publicRouter = [
         element: ShopCart,
         layout: DefaultLayout,
     },
-    
+    {
+        path: "/checkout",
+        element: CheckOut,
+        layout: DefaultLayout,
+    },
 ]
 
 const accountSettingRoutes = [

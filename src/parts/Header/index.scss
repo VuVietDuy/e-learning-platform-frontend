@@ -1,9 +1,10 @@
 .header-container {
     display: flex;
     justify-content: space-between;
-    background-color: #E7E7E7;
+    background-color: #002333;
     height: 80px;
     align-items: center;
+    color: #fff;
 
     .left {
         display: flex;
@@ -28,11 +29,13 @@
         display: flex;
 
         .btn-text {
-            height: 40px;
-            line-height: 40px;
+            color: #fff;
             margin-right: 30px;
+            line-height: 45px;
             font-size: 18px;
             font-weight: 600;
+            text-decoration: none;
+            align-items: center;
 
             &:hover {
                 color: #1877f2;
