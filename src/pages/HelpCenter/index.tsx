@@ -3,11 +3,13 @@ import './index.scss'
 import HelpCenterQuestion from "../../components/HelpCenterQuestion";
 import {QuestionCircleOutlined} from '@ant-design/icons';
 import {MinusOutlined } from '@ant-design/icons';
+import {RightOutlined } from '@ant-design/icons';
 
 
 function HelpCenter() {
   let spwindow_OnorOff = false;
   let isStudent = false;
+  let isArticle = false;
   function turnSP(){
     if(!spwindow_OnorOff){
       document.getElementById('supportWindow')!.style.display = 'block'
@@ -36,10 +38,23 @@ function HelpCenter() {
   function studentOn(){
     isStudent = true;
   }
-  document.getElementById('teachers')!.style.backgroundColor = '#ffffff';
+  
+  function seeArticle(){
+    if(!isArticle){
+      document.getElementById('notarticle')!.style.display = 'none';
+      document.getElementById('fullarticle')!.style.display = 'block';
+      isArticle = true;
+    }else{
+      document.getElementById('notarticle')!.style.display = 'block';
+      document.getElementById('fullarticle')!.style.display = 'none';
+      isArticle = false;
+    }
+  }
 
   return (
     <div className='HelpCenter'>
+      <button className="seefullarticle" onClick={() => {seeArticle();}}>See full article</button>
+      <div className="NotArticle" >
       <div className="support">
         <div className="supportWindow" id='supportWindow'>
           <div className="title">Support <span className='minus' onClick={turnSP}><MinusOutlined /></span></div>
@@ -90,7 +105,7 @@ function HelpCenter() {
         <div className="alpha">&nbsp;</div>
         <img src="/images/helpcenter.png" alt="" className='titleImage'/>
       </div>
-      <div className="Body">
+      <div className="Body" id='notarticle'>
         <div className="top">
           <button className="chooseSide" id='students'onClick={() => { studentOn(); stuortecher();}}>
             Students
@@ -117,8 +132,34 @@ function HelpCenter() {
           <HelpCenterQuestion></HelpCenterQuestion>
         </div>
       </div>
-      
+
+      </div>
+      <div className="FullArticle" id='fullarticle'>
+        <div className="top">
+          <div>GraFish Help Center</div>
+          <RightOutlined />
+          <div>Students</div>
+          <RightOutlined />
+          <div>Getting Started</div>
+
+        </div>
+        <div className="body">
+          <div className="title">What does GraFish Course include?</div>
+          <div className='paragraph'>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</div>
+        <ul>
+          <li>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</li>
+          <li>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</li>
+          <li>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</li>
+          <li>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</li>
+          <li>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</li>
+          <li>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</li>
+        </ul>
+        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. </p>
+        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+        </div>
+      </div>
     </div>
+
   )
 }
 

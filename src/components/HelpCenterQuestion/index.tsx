@@ -11,7 +11,7 @@ function HelpCenterQuestion(props: any) {
     } = props;
 
   return (
-    <div className='HelpCenterQuestion'>
+    <div className='Question'>
       <div className="title">
         Getting Started
       </div>
