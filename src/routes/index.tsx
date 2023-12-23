@@ -13,7 +13,7 @@ import Password from "../pages/AccountSettingPage/componets/Password"
 import SearchResult from "../pages/SearchResult"
 import { LearningPage } from "../pages/LearningPage"
 import HelpCenter from "../pages/HelpCenter"
-
+import InstructorProfile from "../pages/InstructorProfile"
 
 const publicRouter = [
     {
@@ -59,6 +59,10 @@ const publicRouter = [
     {
         path: "/user/*",
         element: AccountSetting,
+        layout: DefaultLayout,
+    },    {
+        path: "/instructorprofile",
+        element: InstructorProfile,
         layout: DefaultLayout,
     },
 ]

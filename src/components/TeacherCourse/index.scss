@@ -1,0 +1,67 @@
+.TeacherCourse{
+    width: 232px;
+    height: 240px;
+    border: 1px solid;
+    border-radius: 8px;
+    transition: .2s;
+    .top{
+        width: 230px;
+        height: 120px;
+        background-color: rgb(179, 179, 179);
+        border-radius: 8px 8px 0px 0px;
+    }
+    .body{
+        width: 232px;
+        height: 120px;
+        padding: 9px 16px 8px 16px;
+        .up{
+            display: flex;
+            justify-content: space-between;
+            .studentNum{
+                font-size: 12px;
+                font-weight: 600;
+            }
+            .hour{
+                font-size: 13px;
+                font-weight: 300;
+            }
+        }
+        .title{
+            margin-top: 10px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+        .startCost{
+            font-size: 10px;
+            font-weight: 600;
+            text-decoration: line-through;
+            color: #AEAEAE;
+            text-align: end;
+        }
+        .bottom{
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 10px;
+            .name{
+                font-size: 12px;
+                font-weight: 300;
+                color: #797979;
+            }
+            .rate{
+                font-size: 14px;
+                font-weight: 400;
+                color: #797979;
+            }
+            .sale{
+                margin-left: 40px;
+                font-size: 16px;
+                font-weight: 600;
+            }
+        }
+    }
+}
+.TeacherCourse:hover{
+    cursor: pointer;
+    box-shadow: 5px 5px 10px rgb(155, 155, 155);
+}
